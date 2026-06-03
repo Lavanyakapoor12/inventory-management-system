@@ -1,16 +1,111 @@
-# React + Vite
+# Inventory Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+A Full Stack Inventory Management System developed using FastAPI, React, SQLAlchemy, SQLite, Docker, Git, and GitHub.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The system allows users to manage products, customers, and orders while automatically tracking inventory stock.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+### Product Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Add products
+* View products
+* Track stock quantity
+* Manage product pricing
+
+### Customer Management
+
+* Add customers
+* View customer information
+* Email and phone tracking
+
+### Order Management
+
+* Create orders
+* Associate orders with customers
+* Store ordered products and quantities
+* Calculate total order amount automatically
+
+### Inventory Tracking
+
+* Automatic stock deduction when an order is placed
+* Prevents ordering when stock is insufficient
+
+### API Documentation
+
+* Interactive Swagger UI using FastAPI
+
+### Frontend Dashboard
+
+* Product listing
+* Customer listing
+* Order listing
+* Dashboard interface built with React
+
+---
+
+## Technology Stack
+
+### Backend
+
+* FastAPI
+* SQLAlchemy
+* SQLite
+* Pydantic
+
+### Frontend
+
+* React
+* Vite
+* Axios
+
+### DevOps
+
+* Docker
+* Docker Compose
+* Git
+* GitHub
+
+---
+
+## Project Structure
+
+inventory/
+
+├── backend/
+
+├── frontend/
+
+├── docker-compose.yml
+
+└── README.md
+
+---
+
+## Run Backend
+
+```bash
+uvicorn main:app --reload
+```
+
+## Run Frontend
+
+```bash
+npm run dev
+```
+
+## API Documentation
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## Author
+
+Lavanya Kapoor
