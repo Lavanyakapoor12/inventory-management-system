@@ -3,7 +3,7 @@ from sqlalchemy import Integer
 from sqlalchemy import String
 from sqlalchemy import Float
 
-from database import Base
+from app.database import Base
 
 
 class Product(Base):
