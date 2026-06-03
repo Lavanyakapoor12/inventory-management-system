@@ -4,9 +4,9 @@ from fastapi import HTTPException
 
 from sqlalchemy.orm import Session
 
-from database import get_db
-from models import Customer
-from schemas import CustomerCreate
+from app.database import get_db
+from app.models import Customer
+from app.schemas import CustomerCreate
 
 router = APIRouter(
     prefix="/customers",

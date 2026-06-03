@@ -4,12 +4,11 @@ from fastapi import HTTPException
 
 from sqlalchemy.orm import Session
 
-from database import get_db
-from models import Product
-from models import Order
-from models import OrderItem
-
-from schemas import OrderCreate
+from app.database import get_db
+from app.models import Product
+from app.models import Order
+from app.models import OrderItem
+from app.schemas import OrderCreate
 
 router = APIRouter(
     prefix="/orders",

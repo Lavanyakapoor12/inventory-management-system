@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from database import engine
-from models import Base
+from app.database import engine
+from app.models import Base
 
-from routes.products import router as product_router
-from routes.customers import router as customer_router
-from routes.orders import router as order_router
+from app.routes.products import router as product_router
+from app.routes.customers import router as customer_router
+from app.routes.orders import router as order_router
 
 Base.metadata.create_all(bind=engine)
 
